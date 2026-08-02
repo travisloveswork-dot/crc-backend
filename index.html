@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis John Mohr -- Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- EVERYTHING YOU WANT PEOPLE TO SEE GOES HERE -->
+    <h1>Travis John Mohr</h1>
+    <p>Dallas, TX | travisloves.work@gmail.com | www.linkedin.com/in/travis-mohr-515045391 </p>
+
+    <h2>Professional Summary</h2>
+    <p>Disciplined IT professional and high-velocity learner transitioning into Cloud Architecture with a robust 20-year career spanning high-level financial analysis, international relations, and complex systems troubleshooting. Recently completed the CompTIA Trifecta (A+, Net+, Sec+), AWS-CCP, and AWS-SAA  in under four months. Combining a background in Fixed Income Securities Analysis, Tech Support troubleshooting, and modern Cloud infrastructure skills to provide a unique perspective on Cloud cost optimization (FinOps) and systems reliability. Bilingual English/Spanish.</p>
+
+    <h2>Technical Certifications</h2>
+    <ul>
+        <li>AWS Certified Solutions Architect – Associate</li>
+        <li>AWS Certified Cloud Practitioner</li>
+        <li>CompTIA Security+ / Network+ / A+</li>
+    </ul>
+    <h2>Technical Projects</h2>
+    <ul>    
+        <li>The Cloud Resume Challenge (AWS) | Estimated Completion: July 2026</li>
+        <li>Developing a serverless architecture using S3, CloudFront, Route 53, Lambda, DynamoDB, and API Gateway.
+Managing infrastructure as code (IaC) and implementing CI/CD pipelines via GitHub Actions.
+        </li>
+    </ul>
+     <h2>Technical Skills</h2>
+    <ul>
+        <li>Networking: TCP/IP, DNS, DHCP, VPNs, Subnetting, Routing/Switching.</li>
+        <li>Security: IAM, Encryption, Firewalls, Threat Mitigation, Compliance Standards.</li>  
+        <li>Cloud: VPC, EC2, S3, Lambda, CloudWatch, SQS/SNS, FinOps.</li>
+        <li>Languages: Native English; Fluent Spanish; Conversational Japanese; Conversational French</li>
+    </ul>
+
+    <h2>Professional Experience</h2>
+    <h3>Tier 1 Tech Support Specialist</h3>
+    <p>CustomIS | June 2026 – Present</p>
+    <ul>
+        <li>Provide front-line technical support for enterprise hardware, software, and networking issues.</li>
+        <li>Manage the ticketing queue, escalating complex cases to Tier 2 while maintaining clear documentation.</li>
+        <li>Administer endpoint security tools and application allowlisting rules via administrative portals.</li>
+    </ul>
+    <h3>Structural Bodyworker/Spinal Injury Rehabilitation Therapist</h3>
+    <p>Private Practice & Clinical Rehabilitation | 2015 – 2026</p>
+    <ul>
+        <li>Diagnosed and treated complex structural pathologies through systems-level logic and troubleshooting alongside medical professionals.</li>
+        <li>Managed clinic operations, client pipelines, and HIPAA-compliant documentation.</li>
+    </ul>
+     <h3>Fixed Income Securities Analyst</h3>
+    <p>Wells Fargo Securities | 2006 – 2012</p>
+    <ul>
+        <li>Conducted complex quantitative analysis of fixed-income assets to assess risk and performance.</li>
+        <li>Maintained high-stakes accuracy in data reporting and financial modeling within a high-pressure corporate environment.</li>
+    </ul>
+        <h2>Education</h2>
+     <h3>Massage Therapy Degree (LM Certification)</h3>
+     <p>2015</p>
+     <h3>Bachelor of Arts in Spanish Language and Literature</h3>
+     <p>2002</p>
+     <p class="visitor-count">Website Visits: <span id="counter">Loading...</span></p>
+<script>
+    const functionUrl = "https://hxjf2b65dnkgzsj6jf4gbhni440phbit.lambda-url.us-east-1.on.aws/";
+
+    fetch(functionUrl)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("counter").innerText = data.views;
+        })
+        .catch(error => {
+            console.error("Error fetching visitor count:", error);
+            document.getElementById("counter").innerText = "1";
+        });
+</script>
+</body>
+
+</html> 
