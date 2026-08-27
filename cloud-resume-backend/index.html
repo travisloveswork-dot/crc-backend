@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis John Mohr - Cloud Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Travis John Mohr</h1>
+        <div class="contact-info">
+            1807 Briar Meadow Drive, Arlington, TX 76014 | 720-487-8043 | travisloves.work@gmail.com
+        </div>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/travis-mohr-515045391" target="_blank">LinkedIn</a> | 
+            <a href="https://travismohr.com" target="_blank">Portfolio</a> | 
+            <a href="https://github.com/travisloveswork-dot" target="_blank">GitHub</a> | 
+            <a href="https://dev.to/travis_c61e9296f9ffc32970/my-crc-journal-an-aws-crc-cloud-journey-34n2" target="_blank">CRC Journal</a>
+        </div>
+
+        <h2>Professional Summary</h2>
+        <p>Disciplined IT professional and high-velocity learner transitioning into Cloud Architecture with a robust 20-year career spanning high-level financial analysis, international relations, and complex systems troubleshooting. Recently completed the CompTIA Trifecta (A+, Net+, Sec+), AWS-CCP, and AWS-SAA in under four months. Combining a background in Fixed Income Securities Analysis, Tech Support troubleshooting, and modern Cloud infrastructure skills to provide a unique perspective on Cloud cost optimization (FinOps) and systems reliability. Bilingual English/Spanish.</p>
+
+        <h2>Technical Certifications</h2>
+        <ul>
+            <li><strong>CompTIA Security+</strong> – (March 2026)</li>
+            <li><strong>CompTIA Network+</strong> – (March 2026)</li>
+            <li><strong>CompTIA A+</strong> – (February 2026)</li>
+            <li><strong>AWS Certified Cloud Practitioner (CCP)</strong> – (April 2026)</li>
+            <li><strong>AWS Certified Solutions Architect – Associate (SAA)</strong> – (April 2026)</li>
+        </ul>
+
+        <h2>Technical Projects</h2>
+        <h3>The Cloud Resume Challenge (AWS) <span style="font-weight: normal; font-size: 0.9em;"><a href="https://travismohr.com" target="_blank">travismohr.com</a></span></h3>
+        <p>Developing a serverless architecture using S3, CloudFront, Route 53, Lambda, DynamoDB, and API Gateway. Managing infrastructure as code (IaC) and implementing CI/CD pipelines via GitHub Actions.</p>
+
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Cloud:</strong> VPC, EC2, S3, Lambda, CloudWatch, SQS/SNS, FinOps.</li>
+            <li><strong>Networking:</strong> TCP/IP, DNS, DHCP, VPNs, Subnetting, Routing/Switching.</li>
+            <li><strong>Security:</strong> IAM, Encryption, Firewalls, Threat Mitigation, Compliance Standards.</li>
+            <li><strong>Languages:</strong> Native English; Fluent Spanish; Conversational Japanese; Conversational French.</li>
+        </ul>
+
+        <h2>Professional Experience</h2>
+        
+        <h3>Senior Tier 1 Tech Support Specialist / NOC Technician <span class="date-location">June 2026 – Present</span></h3>
+        <p style="margin: 2px 0 5px 0;"><em>Custom IS | Arlington, TX</em></p>
+        <ul>
+            <li>Provide real-time monitoring, triage, and troubleshooting for client network infrastructure, servers, and core IT systems within a high-tempo Network Operations Center (NOC).</li>
+            <li>Diagnose and resolve complex hardware, software, and connectivity issues across multi-site environments, ensuring strict adherence to service-level agreements (SLAs).</li>
+            <li>Utilize ticketing systems and diagnostic tools to isolate network anomalies, execute rapid incident escalation, and maintain comprehensive system documentation.</li>
+        </ul>
+
+        <h3>Technical Retooling & Upskilling Sabbatical <span class="date-location">Oct 2025 – April 2026</span></h3>
+        
+        <h3>Structural Bodyworker / Spinal Injury Rehabilitation Therapist <span class="date-location">2015 – 2025</span></h3>
+        
+        <h3>Fixed Income Securities Analyst <span class="date-location">2006 – 2012</span></h3>
+        <p style="margin: 2px 0 10px 0;"><em>Wells Fargo Securities</em></p>
+        
+        <h3>English and Culture Teacher (JET Program) <span class="date-location">2002 – 2005</span></h3>
+        <p style="margin: 2px 0 10px 0;"><em>Japanese Government – Japan</em></p>
+
+        <h2>Education</h2>
+        <p>Bachelor of Arts in Spanish Language and Literature | 2002</p>
+
+        <div class="counter-section">
+            <p>Visitor Count: <span id="visitor-count">...</span></p>
+        </div>
+    </div>
+
+    <script>
+        fetch('YOUR_API_GATEWAY_URL_HERE')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('visitor-count').innerText = data.views || data;
+            })
+            .catch(error => {
+                console.error('Error fetching visitor count:', error);
+                document.getElementById('visitor-count').innerText = 'N/A';
+            });
+    </script>
+</body>
+</html>
