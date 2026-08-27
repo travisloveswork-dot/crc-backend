@@ -33,7 +33,7 @@
 
         <h2>Technical Projects</h2>
         <h3>The Cloud Resume Challenge (AWS) <span style="font-weight: normal; font-size: 0.9em;"><a href="https://travismohr.com" target="_blank">travismohr.com</a></span></h3>
-        <p>Developing a serverless architecture using S3, CloudFront, Route 53, Lambda, DynamoDB, and API Gateway. Managing infrastructure as code (IaC) and implementing CI/CD pipelines via GitHub Actions.</p>
+        <p>Develop a serverless architecture using S3, CloudFront, Route 53, Lambda, DynamoDB, and API Gateway. Managing infrastructure as code (IaC) and implementing CI/CD pipelines via GitHub Actions.</p>
 
         <h2>Technical Skills</h2>
         <ul>
@@ -72,7 +72,8 @@
     </div>
 
     <script>
-        fetch('YOUR_API_GATEWAY_URL_HERE')
+        // Replace 'YOUR_FUNCTIONAL_URL_HERE' with your actual Lambda Function URL inside the quotes
+        fetch('YOUR_FUNCTIONAL_URL_HERE')
             .then(response => response.json())
             .then(data => {
                 document.getElementById('visitor-count').innerText = data.views || data;
